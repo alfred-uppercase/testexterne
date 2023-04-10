@@ -13,7 +13,7 @@ $conn = mysqli_connect("localhost","root","","apiteste") or die("Connexion erron
 $sql = "INSERT INTO users(snom,sprenom,semail,spass,srole,scompanie) VALUES ('{$snom}','{$sprenom}','{$semail}','{$spass}','{$srole}','{$scompanie}')";
 $result = mysqli_query($conn, $sql) or die("Echec");
 
-header("Location: http://localhost/testexterne/index.php");
+header("Location: index.php");
 
 mysqli_close($conn);
 
